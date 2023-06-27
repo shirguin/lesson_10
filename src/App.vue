@@ -1,22 +1,16 @@
 <template>
   <div id="app">
-    <AuthenticationComp :isAuthenticated="isAuthenticated" />
-    <UserList :users="users"/>
-    <MortgageCalculator />
+    <ProductDetails />
   </div>
 </template>
 
 <script>
-import AuthenticationComp from './components/Authentication.vue';
-import UserList from './components/UserList.vue';
-import MortgageCalculator from './components/MortgageCalculator.vue';
+import ProductDetails from './components/ProductDetails.vue';
 
 export default {
   name: 'App',
   components: {
-    AuthenticationComp,
-    UserList,
-    MortgageCalculator,
+    ProductDetails
   },
 
   data() {
